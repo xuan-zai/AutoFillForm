@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.form-data-list-container {
+    width: 210px;
+    height: 300px;
+    box-sizing: border-box;
+    padding: 9px;
+}
+
+.title-container {
+    /* border-bottom: 1px solid #ddd; */
+    padding-bottom: 9px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.title {
+    font-weight: bold;
+}
+
+
+.form-list-container {
+    width: 100%;
+    height: calc(100% - 40px);
+    margin: 3px 0 9px 0;
+    overflow-y: auto;
+}
+
+.form-list-container::-webkit-scrollbar {
+    width: 4px;
+    height: 1px;
+}
+
+/*定义滚动条的滑块的样式有圆角和阴影以及自定义的背景色*/
+.form-list-container::-webkit-scrollbar-thumb {
+    border-radius: 1px;
+    -webkit-box-shadow: inset 0 0 1px #d2d2d2;
+    background: #d2d2d2;
+}
+
+/*定义滚动条所在轨道的样式。有圆角和阴影以及淡色系的背景色*/
+.form-list-container::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 1px #fff;
+    border-radius: 1px;
+    background: #fff;
+}
+
+
+.add-form-item-key-container {
+    width: 100%;
+    height: 39px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.form-data-item-container {
+    width: 100%;
+    height: 60px;
+    background-color: #f0f0f099;
+    margin-bottom: 9px;
+    border-radius: 3px;
+    overflow: hidden;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex;
+    padding: 6px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-data-item-container:last-child {
+    margin-bottom: 0;
+}
+
+.form-item-logo-container {
+    /* width: 27px;
+    height: 27px; */
+}
+
+.form-item-content-container {
+    width: 90px;
+    height: 39px;
+}
+
+.form-item-use-btn {
+    padding: 3px 6px;
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+.form-item-title-container,
+.form-item-description-container {
+    width: 100%;
+    height: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.form-item-description-container {
+    color: rgba(90, 90, 90, 0.6)
+}

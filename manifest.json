@@ -1,0 +1,22 @@
+{
+    "name": "AutoFillForm",
+    "description": "可以帮助减少重复输入的表单内容",
+    "manifest_version": 3,
+    "version": "0.1",
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "content.js"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ],
+    "permissions": [
+        "tabs"
+    ]
+}
