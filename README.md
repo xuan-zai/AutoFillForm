@@ -1,4 +1,4 @@
-# AutoFillForm Extension
+# AutoFillForm Extension --- 抢先版
 
 ![tag](https://badgen.net/github/tag/xuan-zai/AutoFillForm)
 
@@ -41,3 +41,21 @@
         }
     }
    ```
+
+3. 当我们需要对时间框进行自动填值时，可以这样填写 `data.json` 里面的数据格式：
+   ```json
+    {
+        "demo": {
+            "title": "标题",
+            "description": "描述",
+            "data": {
+                "date": {
+                    "type": "time", // 这个 input 框的类型
+                    "value": "2021-03-02" // 要选的时间值
+                }
+            }
+        }
+    }
+   ```
+
+> ⚠️ 当前版本只支持 `antd ui` 框架，其他的框架还在测试兼容中...
