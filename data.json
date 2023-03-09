@@ -1,10 +1,12 @@
 {
-    "Login": {
-        "title": "title",
-        "description": "description",
+    "demo": {
+        "title": "标题",
+        "description": "描述",
         "data": {
-            "account": "admin",
-            "password": "a123456"
+            "date": {
+                "type": "time",
+                "value": "2021-03-02"
+            }
         }
     }
 }
